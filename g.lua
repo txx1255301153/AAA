@@ -24,12 +24,12 @@ local VERSION = 7.2
             Lua = {
                 Path = SCRIPT_PATH,
                 Name = "gsoAIO.lua",
-                Url = "https://raw.githubusercontent.com/gamsteron/GoSExt/master/gsoAIO.lua"
+                Url = "https://github.com/txx1255301153/AAA/blob/master/g.lua"
             },
             Version = {
                 Path = SCRIPT_PATH,
                 Name = "gsoAIO.version",
-                Url = "https://raw.githubusercontent.com/gamsteron/GoSExt/master/gsoAIO.version"
+                Url = "https://github.com/txx1255301153/AAA/blob/master/g.version"
             }
         }
         local function AutoUpdate()
