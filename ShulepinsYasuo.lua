@@ -700,24 +700,9 @@ function Yasuo:Load()
 	end
 
 	function this:LaneClear()
-			if Yasuo.Common.IsWindUp() then return end
+			if Yasuo.Common.IsWindUp() 
 
-		for i = 1, Game.MinionCount() do
-			local minion = Game.Minion(i)
-			if minion and minion.team == 300 then
-				if this.Menu.JungleClear.Q.Use:Value() and this.Q:IsReady() and this.Q:Data().name ~= "YasuoQ3W" and Yasuo.Common.ValidTarget(minion, this.Q.range) then
-					this.Q:CastWithPrediction(minion)
-					break
-				elseif this.Menu.JungleClear.Q3.Use:Value() and this.Q:IsReady() and this.Q:Data().name == "YasuoQ3W" and Yasuo.Common.ValidTarget(minion, this.Q.range) then
-					this.Q:CastWithPrediction(minion)
-					break
-				elseif this.Menu.JungleClear.E.Use:Value() and this.E:IsReady() and Yasuo.Common.ValidTarget(minion, this.E.range) and not this:IsMarked(minion) then
-					this.E:CastOnUnit(minion)
-					break
-				end
-			end
-		end
-	end
+
 
 		this:LastHit()
 
